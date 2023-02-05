@@ -1,0 +1,1063 @@
+{
+	"info": {
+		"_postman_id": "80166d98-5e30-44ec-90e5-3bdf66f2dbca",
+		"name": "eCourt POST Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local Execution",
+			"item": [
+				{
+					"name": "Case Number Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"maharashtra\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"0\",\r\n    \"bench_val\": \"1010122@1,3,4,5,8@N\",\r\n    \"ct\": \"12\",\r\n    \"cn\": \"114\",\r\n    \"cy\": \"2015\",\r\n    \"recordsReturned\": \"1\",\r\n    \"format\": \"0\",\r\n    \"api\": \"\",\r\n    \"update\": \"y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/caseNumber",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"caseNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Party Name Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"Will\",\r\n    \"cy\": \"2015\",\r\n    \"f\": \"1\",\r\n    \"recordsReturned\": \"1\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/partyName",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"partyName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Advocate Name Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"S. B. Padeer\",\r\n    \"f\": \"0\",\r\n    \"recordsReturned\": \"5\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/advocateName",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"advocateName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cause List Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"court\": \"3^2\",\r\n    \"causeDate\": \"25-11-2022\",\r\n    \"caseType\": \"0\",\r\n    \"recordsReturned\": \"2\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/causeList",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"causeList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNR Number Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cino\": \"MHNG010032442019\",\r\n    \"api\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cnrNumber",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cnrNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Case Number Sci Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ct\": \"1\",\r\n    \"cn\": \"150\",\r\n    \"cy\": \"2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/caseNumberSci",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"caseNumberSci"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Local Execution Misc",
+			"item": [
+				{
+					"name": "Advocate Name Local Basic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"S. B. Padeer\",\r\n    \"f\": \"0\",\r\n    \"recordsReturned\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/advocateNameBasic",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"advocateNameBasic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNR Number Local Basic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cino\": \"MHNG020019932010\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cnrNumberBasic",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cnrNumberBasic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confonet Local",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bench_val\": \"Nagpur, Maharashtra\",\r\n    \"ct\": \"CC\",\r\n    \"cn\": \"305\",\r\n    \"cy\": \"2022\",\r\n    \"stateCode\": \"Maharashtra\",\r\n    \"distCode\": \"Nagpur\",\r\n    \"api\": \"L\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/confonet",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"confonet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get State/District Values",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/districtStateVals",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"districtStateVals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bench Values",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/benchVals",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"benchVals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public Server Execution",
+			"item": [
+				{
+					"name": "Case Number Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"0\",\r\n    \"bench_val\": \"1010122@1,3,4,5,8@N\",\r\n    \"ct\": \"12\",\r\n    \"cn\": \"114\",\r\n    \"cy\": \"2015\",\r\n    \"recordsReturned\": \"1\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/caseNumber",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"caseNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Party Name Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"Will\",\r\n    \"cy\": \"2015\",\r\n    \"f\": \"1\",\r\n    \"recordsReturned\": \"1\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/partyName",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"partyName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Advocate Name Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"S. B. Padeer\",\r\n    \"f\": \"0\",\r\n    \"recordsReturned\": \"\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/advocateName",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"advocateName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cause List Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"court\": \"3^2\",\r\n    \"causeDate\": \"15-11-2022\",\r\n    \"caseType\": \"0\",\r\n    \"recordsReturned\": \"1\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/causeList",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"causeList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNR Number Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cino\": \"MHNG020019932010\",\r\n    \"api\": \"m\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/cnrNumber",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"cnrNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Case Number Sci Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ct\": \"1\",\r\n    \"cn\": \"11\",\r\n    \"cy\": \"2015\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/caseNumberSci",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"caseNumberSci"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public Server Execution Misc",
+			"item": [
+				{
+					"name": "Advocate Name Basic Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state_val\": \"21\",\r\n    \"district_val\": \"6\",\r\n    \"courtComplexEstb\": \"1\",\r\n    \"bench_val\": \"3\",\r\n    \"name\": \"S. B. Padeer\",\r\n    \"f\": \"0\",\r\n    \"recordsReturned\": \"5\",\r\n    \"format\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/advocateNameBasic",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"advocateNameBasic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNR Number Basic Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cino\": \"MHNG020019932010\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://31.220.108.229:8080/cnrNumberBasic",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"cnrNumberBasic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confonet Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bench_val\": \"Nagpur, Maharashtra\",\r\n    \"ct\": \"CC\",\r\n    \"cn\": \"305\",\r\n    \"cy\": \"2022\",\r\n    \"stateCode\": \"Maharashtra\",\r\n    \"distCode\": \"Nagpur\",\r\n    \"api\": \"L\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/confonet",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"confonet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get State/District Values Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://31.220.108.229:8080/districtStateVals",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"districtStateVals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bench Values Public",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://31.220.108.229:8080/benchVals",
+							"protocol": "http",
+							"host": [
+								"31",
+								"220",
+								"108",
+								"229"
+							],
+							"port": "8080",
+							"path": [
+								"benchVals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "L",
+			"item": [
+				{
+					"name": "LegalDiaryLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "adityawashimkar28@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "gauravadi2",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://legaldiary.in/login",
+							"protocol": "https",
+							"host": [
+								"legaldiary",
+								"in"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CNR_DC",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "G_ENABLED_IDPS=google; session=eyJyYmFjX3VzZXIiOmZhbHNlLCJ1c2VyaWQiOjI1NDIsInVzZXJuYW1lIjoiYWRpdHlhIHdhc2hpbWthciJ9.Y50uHw.xi_tdZJZA6CUdE4_JFGzE0AnKXY; twk_idm_key=0B0FOuRrEylTwiLROQP7D; TawkConnectionTime=0; twk_uuid_58642ad4f81f1673b6456f67=%7B%22uuid%22%3A%221.1vWjqudAbcL0jgnGj1TKwCuxCIa9rWyBwieOxxkhToAV9fbwwVJSRzre8n8ofDDo3gjkQJoMUrBT9jmqaBtvYlW5W7aQGnEYW2EWsJr8m3FAxfDmdBBRg7k%22%2C%22version%22%3A3%2C%22domain%22%3A%22legaldiary.in%22%2C%22ts%22%3A1671460663922%7D",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://legaldiary.in/fetch_case_data?cnr=MHNG010032442019&court=district-court&use_eci=true",
+							"protocol": "https",
+							"host": [
+								"legaldiary",
+								"in"
+							],
+							"path": [
+								"fetch_case_data"
+							],
+							"query": [
+								{
+									"key": "cnr",
+									"value": "MHNG010032442019"
+								},
+								{
+									"key": "court",
+									"value": "district-court",
+									"description": "high-court"
+								},
+								{
+									"key": "use_eci",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confonet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://legaldiary.in/fetch_case_data?casenumber=CC%2F305%2F2022&court_type=consumer-forum&court=district-forum&statecode=eyJzdGF0ZUNvZGUiOiIyMSJ9&distcode=eyJzdGF0ZUNvZGUiOiIyMSIsImRpc3RyaWN0Q29kZSI6IjQ2OSJ9",
+							"protocol": "https",
+							"host": [
+								"legaldiary",
+								"in"
+							],
+							"path": [
+								"fetch_case_data"
+							],
+							"query": [
+								{
+									"key": "casenumber",
+									"value": "CC%2F305%2F2022"
+								},
+								{
+									"key": "court_type",
+									"value": "consumer-forum"
+								},
+								{
+									"key": "court",
+									"value": "district-forum"
+								},
+								{
+									"key": "statecode",
+									"value": "eyJzdGF0ZUNvZGUiOiIyMSJ9"
+								},
+								{
+									"key": "distcode",
+									"value": "eyJzdGF0ZUNvZGUiOiIyMSIsImRpc3RyaWN0Q29kZSI6IjQ2OSJ9",
+									"description": "{\"stateCode\":\"21\",\"districtCode\":\"469\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CGIT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cgit.labour.gov.in/cause-list?field_date_value%5Bvalue%5D%5Bdate%5D=08/02/2023&field_term_cgit_tid=25&field_name_of_appellant_value=Prabhu&field_respondent__value=APFC&field_case_no__value=CGIT/NGP/29/22-23&field_case_type_tid=30",
+							"protocol": "https",
+							"host": [
+								"cgit",
+								"labour",
+								"gov",
+								"in"
+							],
+							"path": [
+								"cause-list"
+							],
+							"query": [
+								{
+									"key": "field_date_value%5Bvalue%5D%5Bdate%5D",
+									"value": "08/02/2023"
+								},
+								{
+									"key": "field_term_cgit_tid",
+									"value": "25"
+								},
+								{
+									"key": "field_name_of_appellant_value",
+									"value": "Prabhu"
+								},
+								{
+									"key": "field_respondent__value",
+									"value": "APFC"
+								},
+								{
+									"key": "field_case_no__value",
+									"value": "CGIT/NGP/29/22-23"
+								},
+								{
+									"key": "field_case_type_tid",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "M",
+			"item": [
+				{
+					"name": "MercuryLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"teslapablo45@gmail.com\",\"pass\":\"Tesla@555\",\"remember\":true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://mercury.lawyer/api/login",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_CaseNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mercury.lawyer/api/caseStatus?courtID=DistrictCourt&state_val=1&district_val=9&courtComplexEstb=0&ct=27&cn=114&cy=2015&bench_val=3",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"caseStatus"
+							],
+							"query": [
+								{
+									"key": "courtID",
+									"value": "DistrictCourt",
+									"description": "DistrictCourt"
+								},
+								{
+									"key": "state_val",
+									"value": "1",
+									"description": "Maharashtra"
+								},
+								{
+									"key": "district_val",
+									"value": "9",
+									"description": "Nagpur"
+								},
+								{
+									"key": "courtComplexEstb",
+									"value": "0",
+									"description": "Court Complex"
+								},
+								{
+									"key": "ct",
+									"value": "27",
+									"description": "Case Type"
+								},
+								{
+									"key": "cn",
+									"value": "114",
+									"description": "Case Number"
+								},
+								{
+									"key": "cy",
+									"value": "2015",
+									"description": "Case Year RCS/200750/2010"
+								},
+								{
+									"key": "bench_val",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_CNR_DC",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTYwMzdmZGNlMDVlMzI0MGI2MmY0MGEiLCJmbmFtZSI6IkFkaXR5YSIsImxuYW1lIjoiSm9zaGkiLCJlbWFpbCI6ImFkdmFkaXR5YWpvc2hpQGdtYWlsLmNvbSIsInBhc3MiOiIkMmIkMTAkekFCUDhYRTEuMjBUSU1LYy5rVG1XZU5UcXlPdEJrOVRDYXFlQXBRQ2pBQ2FMTjVtV1Nhc20iLCJyb2xlIjoic3Vic2NyaWJlciIsImFjdGl2ZSI6dHJ1ZSwiZXhwIjoxNjQ5NTMwMzk2LCJpYXQiOjE2NDk1MjY3OTZ9.JJDSyKewY8YhdmOHlb-FV9OJR0BqPpzlxhHz2mm77dQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://mercury.lawyer/api/caseStatus?courtID=DistrictCourt_CNR&cino=MHNG010032442019",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"caseStatus"
+							],
+							"query": [
+								{
+									"key": "courtID",
+									"value": "DistrictCourt_CNR"
+								},
+								{
+									"key": "cino",
+									"value": "MHNG010032442019"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_Confonet_D",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTYwMzdmZGNlMDVlMzI0MGI2MmY0MGEiLCJmbmFtZSI6IkFkaXR5YSIsImxuYW1lIjoiSm9zaGkiLCJlbWFpbCI6ImFkdmFkaXR5YWpvc2hpQGdtYWlsLmNvbSIsInBhc3MiOiIkMmIkMTAkekFCUDhYRTEuMjBUSU1LYy5rVG1XZU5UcXlPdEJrOVRDYXFlQXBRQ2pBQ2FMTjVtV1Nhc20iLCJyb2xlIjoic3Vic2NyaWJlciIsImFjdGl2ZSI6dHJ1ZSwiZXhwIjoxNjQ5NTMwMzk2LCJpYXQiOjE2NDk1MjY3OTZ9.JJDSyKewY8YhdmOHlb-FV9OJR0BqPpzlxhHz2mm77dQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://mercury.lawyer/api/caseStatus?courtID=NCDRC%2A&bench_val=21_469&ct=CC&cn=305&cy=2022",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"caseStatus"
+							],
+							"query": [
+								{
+									"key": "courtID",
+									"value": "NCDRC%2A"
+								},
+								{
+									"key": "bench_val",
+									"value": "21_469"
+								},
+								{
+									"key": "ct",
+									"value": "CC"
+								},
+								{
+									"key": "cn",
+									"value": "305"
+								},
+								{
+									"key": "cy",
+									"value": "2022"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_DisplayBoard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mercury.lawyer/api/refreshDisplayBoard?courtID=SupremeCourt",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"refreshDisplayBoard"
+							],
+							"query": [
+								{
+									"key": "courtID",
+									"value": "SupremeCourt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_HearingCourtsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mercury.lawyer/api/getCourtsList",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"getCourtsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "M_BenchVals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mercury.lawyer/api/getBenchesList?courtID=NCDRC*",
+							"protocol": "https",
+							"host": [
+								"mercury",
+								"lawyer"
+							],
+							"path": [
+								"api",
+								"getBenchesList"
+							],
+							"query": [
+								{
+									"key": "courtID",
+									"value": "NCDRC*"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
