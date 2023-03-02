@@ -57,7 +57,7 @@ public class AlternativeRequest {
         http.setRequestProperty("Accept", "*/*");
         http.setRequestProperty("Content-Type", "application/json");
 
-        String data = "{\"email\": \"teslapablo45@gmail.com\", \"pass\": \"Tesla@555\", \"remember\": \"true\"}";
+        String data = "";
         byte[] out = data.getBytes(StandardCharsets.UTF_8);
         OutputStream stream = http.getOutputStream();
         stream.write(out);
@@ -113,7 +113,7 @@ public class AlternativeRequest {
         http.setRequestProperty("Accept", "*/*");
         http.setRequestProperty("Content-Type", "application/json");
 
-        String data = "{\"email\": \"teslapablo45@gmail.com\", \"pass\": \"Tesla@555\", \"remember\": \"true\"}";
+        String data = "";
         byte[] out = data.getBytes(StandardCharsets.UTF_8);
         OutputStream stream = http.getOutputStream();
         stream.write(out);
@@ -138,8 +138,8 @@ public class AlternativeRequest {
     private String lFormatURLConfonet(JsonBodyInputConfonet j) throws Exception {
         List<NameValuePair> urlParameters = new ArrayList<>();
 
-        urlParameters.add(new BasicNameValuePair("username", "adityawashimkar28@gmail.com"));
-        urlParameters.add(new BasicNameValuePair("password", "gauravadi2"));
+        urlParameters.add(new BasicNameValuePair("username", ""));
+        urlParameters.add(new BasicNameValuePair("password", ""));
 
         HttpClient http;
         CookieStore httpCookieStore = new BasicCookieStore();
@@ -194,7 +194,7 @@ public class AlternativeRequest {
         http.setRequestProperty("Accept", "*/*");
         http.setRequestProperty("Content-Type", "application/json");
 
-        String data = "{\"email\": \"teslapablo45@gmail.com\", \"pass\": \"Tesla@555\", \"remember\": \"true\"}";
+        String data = "";
         byte[] out = data.getBytes(StandardCharsets.UTF_8);
         OutputStream stream = http.getOutputStream();
         stream.write(out);
@@ -215,8 +215,8 @@ public class AlternativeRequest {
     private String lFormatURLCino(String cino) throws IOException {
         List<NameValuePair> urlParameters = new ArrayList<>();
 
-        urlParameters.add(new BasicNameValuePair("username", "adityawashimkar28@gmail.com"));
-        urlParameters.add(new BasicNameValuePair("password", "gauravadi2"));
+        urlParameters.add(new BasicNameValuePair("username", ""));
+        urlParameters.add(new BasicNameValuePair("password", ""));
 
         HttpClient http;
         CookieStore httpCookieStore = new BasicCookieStore();
@@ -280,8 +280,8 @@ public class AlternativeRequest {
     private String lFormatURLDataFetch(String state_val) throws Exception {
         List<NameValuePair> urlParameters = new ArrayList<>();
 
-        urlParameters.add(new BasicNameValuePair("username", "adityawashimkar28@gmail.com"));
-        urlParameters.add(new BasicNameValuePair("password", "gauravadi2"));
+        urlParameters.add(new BasicNameValuePair("username", ""));
+        urlParameters.add(new BasicNameValuePair("password", ""));
 
         HttpClient http;
         CookieStore httpCookieStore = new BasicCookieStore();
@@ -311,7 +311,7 @@ public class AlternativeRequest {
         http.setRequestProperty("Accept", "*/*");
         http.setRequestProperty("Content-Type", "application/json");
 
-        String data = "{\"email\": \"teslapablo45@gmail.com\", \"pass\": \"Tesla@555\", \"remember\": \"true\"}";
+        String data = "";
         byte[] out = data.getBytes(StandardCharsets.UTF_8);
         OutputStream stream = http.getOutputStream();
         stream.write(out);
@@ -353,8 +353,8 @@ public class AlternativeRequest {
     private void sqlConnect() throws Exception {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://hp322.servername.online:3306/fresh231_courts",
-                    "fresh231_test", "Sydney@389");
+            conn = DriverManager.getConnection("",
+                    "", "");
         } catch (Exception e) {
             e.printStackTrace(System.out);
             throw new Exception("SQL connection has failed: " + e);
